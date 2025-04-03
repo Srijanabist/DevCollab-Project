@@ -1,0 +1,124 @@
+:root {
+  --d-green: #253d2c;
+  --l-green: #68ba7f;
+  --dark: #000000;
+  --white: #ffffff;
+  --grey: #d9d9d9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+i {
+  padding: 0.2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--white);
+}
+
+.Header-top {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--grey);
+}
+
+.Icon1 {
+  margin: 0 4rem;
+  padding: 0.5rem;
+}
+
+.Icon1 a {
+  font-size: 0.8rem;
+  color: var(--dark);
+}
+
+.Social-links {
+  margin: 0 4rem;
+  padding: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img{
+  width: 168px;
+  height: 119px;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--d-green);
+}
+
+.Nav_links {
+  margin: 0 4rem;
+  padding: 0.5rem;
+}
+
+.Nav_links li {
+  display: inline-block;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.Nav_links li:hover {
+  background-color: var(--l-green);
+}
+
+.Nav_links a {
+  color: var(--white);
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  gap: 2rem;
+  margin: 0 4rem;
+}
+
+.H_btn {
+  display: none;
+  
+}
+
+@media (max-width: 917px) {
+.Icon1{
+  margin: 0;
+  flex-wrap: nowrap;
+  overflow: hidden;
+ 
+}
+  
+
+  .Nav_links{
+    display: none;
+   
+    
+  }
+
+  .Button{
+    display:flex;
+ margin-left: auto ;
+  }
+
+  .H_btn {
+  display: block;
+  background-color: var( --l-green) ;
+}
+}
