@@ -1,291 +1,222 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   margin: 0;
-  overflow-x: hidden;
+  padding: 15px;
 }
 
-/* Contact Container */
-.Contact-Container {
-  display: flex;
-  flex-direction: row;
-  margin: 2rem auto;
-  max-width: 1200px;
-  padding: 0 8px;
-}
-
-.Contact-Us {
-  flex: 1;
-  width: 529px;
-  height: 137.8px;
-  padding-right: 20px;
-}
-
-.Left-Section h1 {
-  padding-top: 100px;
-  font-size: 96px;
-  font-weight: 600;
-}
-.Contact-Info {
+h1 {
+  text-align: center;
+  color: #333;
   margin-bottom: 30px;
+  font-size: 48px;
 }
 
-.Left-Section p {
-  font-size: 24px;
-  font-weight: 300;
-}
-
-.Contact-Info h3 {
-  padding-top: 30px;
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.Contact-Info p {
-  font-weight: 300;
-  font-size: 24px;
-}
-.Social-Icons h4 {
-  font-size: 30px;
-  font-weight: 500;
-  padding-bottom: 10px;
-}
-
-.Social-Icons i {
-  font-size: 24px;
-  margin-right: 15px;
-  cursor: pointer;
-}
-
-.icons-container {
-  display: flex;
-  gap: 15px;
-}
-
-/* Right Section */
-.Right-Section {
-  flex: 1;
-  padding: 20px 8px;
-}
-
-.R form {
+form {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.R label {
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 588px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
   font-size: 36px;
   font-weight: 500;
-  margin-bottom: 10px;
 }
 
-input[type="text"],
 input[type="email"],
-input[type="number"],
-.R textarea {
-  width: 588px;
-  height: 78px;
+input[type="password"] {
+  width: 100%;
+  height: 76px;
+  padding: 12px;
   border: none;
   background-color: #e0e0e0;
-  border-radius: 2px;
+  border-radius: 4px;
   font-size: 36px;
   font-family: "Poppins", sans-serif;
+}
+
+.forgot-password {
+  width: 100%;
+  max-width: 588px;
+  text-align: right;
   margin-bottom: 20px;
 }
 
-.R button {
-  margin-top: 30px;
+.forgot-password a {
+  color: #676767;
+  text-decoration: none;
+  font-size: 36px;
+}
+
+.submit {
+  width: 100%;
+  max-width: 588px;
+  height: 76px;
+  padding: 12px;
   background-color: #04594d;
   color: white;
-  width: 338px;
-  height: 76px;
   border: none;
-  border-radius: 20px;
-  padding: 12px 30px;
-  font-size: 36px;
-  font-weight: 500;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 
-.R button:hover {
-  background-color: #067a68;
+.submit:hover {
+  background-color: #234539;
 }
 
-/* Responsive Design */
+/* Tablet Responsive Styles */
 @media (max-width: 768px) {
-  .Contact-Container {
-    flex-direction: row;
+  .adminlogin-container {
+    padding: 25px;
   }
 
-  .Left-Section h1 {
-    font-size: 48px;
-    font-weight: 600;
-  }
-  .Contact-Us {
-    font-size: 48px;
-    font-weight: 600;
-    padding: 20px;
-  }
-  .Left-Section p {
-    font-size: 14px;
-    font-weight: 300;
-  }
-  .Contact-Info h3 {
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-  .Contact-Info p {
-    font-size: 14px;
-    font-weight: 300;
-  }
-  .Social-Icons h4 {
-    font-size: 30px;
-    font-weight: 500;
-    padding-bottom: 20px;
-  }
-  .icons-container {
-    display: flex;
-    gap: 15px;
-  }
-  .Social-Icons {
-    width: 100%;
-    margin-top: 20px;
+  h1 {
+    font-size: 32px;
   }
 
-  .icons-container {
-    display: flex;
-    justify-content: flex-start;
-    gap: 14px;
-  }
-  .icons-container i {
-    font-size: 20px;
+  label {
+    font-size: 24px;
   }
 
-  .Right-Section {
-    padding: 20px;
-  }
-
-  input[type="text"],
   input[type="email"],
-  input[type="number"] {
-    width: 404px;
-    height: 78px;
-    font-size: 36px;
+  input[type="password"] {
+    height: 42px;
+    font-size: 22px;
   }
 
-  .R textarea {
-    width: 419px;
-    height: 270px;
+  .forgot-password a {
+    font-size: 22px;
   }
-  .R button {
-    width: 210px;
-    height: 76px;
-    font-size: 36px;
+
+  .submit {
+    height: 42px;
+    font-size: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    text-align: center;
   }
 }
 
+/* Mobile Responsive Styles */
 @media (max-width: 480px) {
-  .Contact-Container {
-    flex-direction: column;
-  }
-  .Contact-Us {
-    flex: 1;
-    width: 315px;
-    height: 64px;
-    padding-right: 20px;
+  .adminlogin-container {
+    padding: 20px;
   }
 
-  .Left-Section h1 {
-    padding-top: 10px;
-    font-size: 36px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .Contact-Info {
-    margin-bottom: 30px;
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 
-  .Left-Section p {
+  label {
+    font-size: 16px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 308px;
+    height: 31px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .forgot-password a {
     font-size: 14px;
-    font-weight: 300;
-    text-align: center;
   }
 
-  .Contact-Info h3 {
-    padding-top: 30px;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  .Contact-Info p {
-    font-weight: 300;
-    font-size: 14px;
-    text-align: center;
-  }
-  .Social-Icons h4 {
-    font-size: 14px;
-    font-weight: 500;
-    padding-bottom: 20px;
-  }
-  .icons-container {
-    display: flex;
-    gap: 15px;
-  }
-  .Social-Icons {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .icons-container {
+  .submit {
+    width: 308px;
+    height: 31px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
-    gap: 8px;
+    align-items: center;
+    text-align: center;
   }
-  .icons-container i {
-    font-size: 13px;
+}
+
+@media (max-height: 480px) and (orientation: landscape) {
+  body {
+    padding: 10px;
   }
-  input[type="text"],
+
+  .adminlogin-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
   input[type="email"],
-  input[type="number"] {
-    width: 219px;
-    height: 31px;
-    font-size: 14px;
-  }
-  .R label {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .R textarea {
-    width: 218px;
-    height: 112px;
+  input[type="password"] {
+    width: 100%;
+    height: 35px;
+    padding: 8px;
     font-size: 14px;
   }
 
-  .R button {
-    width: 66px;
-    height: 27px;
+  .submit {
+    width: 100%;
+    height: 35px;
     font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 12px;
+    text-align: center;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 320px) {
+  .adminlogin-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 10px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    height: 21px;
+    font-size: 10px;
   }
 }
