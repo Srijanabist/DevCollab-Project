@@ -26,25 +26,26 @@ a {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--white);
+  font-size: 1rem;
 }
 
-.Header-top {
+.header-top {
   display: flex;
   justify-content: space-between;
   background-color: var(--grey);
 }
 
-.Icon1 {
+.icon1 {
   margin: 0 4rem;
   padding: 0.5rem;
 }
 
-.Icon1 a {
+.icon1 a {
   font-size: 0.8rem;
   color: var(--dark);
 }
 
-.Social-links {
+.social-links {
   margin: 0 4rem;
   padding: 0.5rem;
 }
@@ -54,37 +55,36 @@ body {
   justify-content: center;
 }
 
-.logo img{
+.logo img {
   width: 168px;
   height: 119px;
 }
 
-.Navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   background-color: var(--d-green);
 }
 
-.Nav_links {
+.nav_links {
   margin: 0 4rem;
-  padding: 0.5rem;
 }
 
-.Nav_links li {
+.nav_links li {
   display: inline-block;
   align-items: center;
   padding: 0.5rem;
 }
 
-.Nav_links li:hover {
+.nav_links li:hover {
   background-color: var(--l-green);
 }
 
-.Nav_links a {
+.nav_links a {
   color: var(--white);
 }
 
-.Button {
+.button {
   display: flex;
   align-items: center;
   color: #ffffff;
@@ -92,33 +92,523 @@ body {
   margin: 0 4rem;
 }
 
-.H_btn {
+.hamburger_btn {
   display: none;
-  
 }
 
 @media (max-width: 917px) {
-.Icon1{
-  margin: 0;
-  flex-wrap: nowrap;
-  overflow: hidden;
- 
-}
-  
+  .icon1 {
+    margin: 0;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
 
-  .Nav_links{
+  .nav_links {
     display: none;
-   
-    
   }
 
-  .Button{
-    display:flex;
- margin-left: auto ;
+  .button {
+    display: flex;
+    margin-left: auto;
   }
 
-  .H_btn {
-  display: block;
-  background-color: var( --l-green) ;
+  .hamburger_btn {
+    display: block;
+    background-color: var(--l-green);
+  }
 }
+
+@media screen and (max-width: 550px) {
+  .icon1 {
+    display: none;
+  }
+
+  .social-links {
+    margin: auto;
+  }
 }
+
+.hero-ticker {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--grey);
+  white-space: nowrap;
+  margin: 0 4rem;
+}
+
+.breaking {
+  color: var(--white);
+  background-color: var(--l-green);
+}
+
+.breaking h1 {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.news {
+  overflow: hidden;
+  width: 80%;
+}
+
+.news ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  animation: ticker-scroll 20s linear infinite;
+}
+
+.news li {
+  margin: 0 20px;
+}
+
+.news a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+/* Animation */
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* hero section */
+
+.Container {
+  display: flex;
+  margin: 2rem 4rem;
+}
+
+.Container-column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 3rem;
+}
+.col1,
+.col2 {
+  height: 200px;
+}
+.Hero-img {
+  width: 100%;
+}
+
+.Hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text1 , .text2{
+
+ position: relative;
+  bottom: 80px;
+  padding-left: .75rem;
+  color: var(--white);
+}
+
+.text1 a,
+.text2 a {
+  
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.text1 p , .text2 p{
+  display: inline;
+
+ 
+
+}
+
+.Hero-center {
+  margin: 0 2rem;
+  width: 45%;
+}
+
+.Hero-r1 {
+  height: 476px;
+}
+
+.Hero01 {
+  width: 100%;
+  height: 100%;
+}
+
+.Hero01 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text3 {
+  position: relative;
+  bottom: 105px;
+  padding: 0.5rem;
+
+  color: var(--white);
+}
+
+.text3 a {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.Hero-column-2 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 2rem;
+}
+
+.Row {
+  display: flex;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.Hero-Row-1 {
+  background-color: var(--l-green);
+  width: 50%;
+  text-align: center;
+  padding: 0.8rem 0;
+  color: var(--white);
+}
+
+.Hero-Row-2 {
+  background-color: var(--grey);
+  width: 50%;
+  text-align: center;
+  padding: 0.8rem 0;
+  color: var(--dark);
+}
+
+.News-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 1rem;
+}
+
+.News-column1 {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  padding: 0.5rem;
+  gap: 1rem;
+  background-color: var(--white);
+  border-bottom: var(--grey) 2px solid;
+}
+
+.News-img {
+  width: 100%;
+  height: 100px;
+}
+
+.News-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.News-text {
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+  color: var(--dark);
+  padding: 0.5rem;
+}
+
+.News-text a {
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+.Trending-Section {
+  margin: 2rem 4rem;
+}
+
+.Trending-Section h1::after {
+  content: "";
+  display: inline-block;
+  width: 86%;
+  height: 2px;
+  background-color: var(--grey);
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.Trending-Row {
+  display: flex;
+  gap: 1rem;
+  height: auto;
+  background-color: var(--white);
+  margin: 0 4rem;
+}
+
+.Trending-News-1 {
+  width: 25%;
+  margin:1rem;
+}
+
+.Trending-img {
+  width: 100%;
+}
+
+.Trending-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Trending-text {
+  color: var(--dark);
+  padding: 0.5rem;
+}
+
+.Trending-text a {
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+.Trending-text p{
+  display: inline;
+  margin-right: 0.5rem; ;
+}
+
+.National-Section {
+  margin: 2rem 4rem;
+}
+
+.Trending-Section {
+  margin: 2rem 4rem;
+}
+
+.Trending-Section h1::after {
+  content: "";
+  display: inline-block;
+  width: 86%;
+  height: 2px;
+  background-color: var(--grey);
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.Trending-Row {
+  display: flex;
+  gap: 1rem;
+  height: auto;
+  background-color: var(--white);
+  margin: 0 4rem;
+}
+
+.Trending-News-1 {
+  width: 25%;
+  margin:1rem;
+}
+
+.Trending-img {
+  width: 100%;
+}
+
+.Trending-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Trending-text {
+  color: var(--dark);
+  padding: 0.5rem;
+}
+
+.Trending-text a {
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+.Trending-text p{
+  display: inline;
+  margin-right: 0.5rem; ;
+}
+.National-Section {
+  margin: 2rem 4rem;
+}
+
+.National-Section h1::after {
+  content: "";
+  display: inline-block;
+  width: 86%;
+  height: 2px;
+  background-color: var(--grey);
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.National-Row {
+  display: flex;
+  gap: 1rem;
+  height: auto;
+  background-color: var(--white);
+  margin: 0 4rem;
+}
+
+.National-News-1 {
+  width: 25%;
+  margin:1rem;
+}
+
+.National-img {
+  width: 100%;
+}
+
+.National-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.National-text {
+  color: var(--dark);
+  padding: 0.5rem;
+}
+
+.National-text a {
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+.International-text p{
+  display: inline;
+  margin-right: 0.5rem; ;
+}
+
+  
+ 
+.International-Section {
+  margin: 2rem 4rem;
+}
+
+.International-Section h1::after {
+  content: "";
+  display: inline-block;
+  width: 82%;
+  height: 2px;
+  background-color: var(--grey);
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.International-Row {
+  display: flex;
+  gap: 1rem;
+  height: auto;
+  background-color: var(--white);
+  margin: 0 4rem;
+}
+
+.International-News-1 {
+  width: 25%;
+  margin:1rem;
+}
+
+.International-img {
+  width: 100%;
+}
+
+.International-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.International-text {
+  color: var(--dark);
+  padding: 0.5rem;
+}
+
+.International-text a {
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+.International-text p{
+  display: inline;
+  margin-right: 0.5rem; ;
+}
+
+  
+ .International-text p{
+  display: inline;
+  margin-right: 0.5rem; ;
+}
+
+  
+ 
+.Sports-Section {
+  margin: 2rem 4rem;
+}
+
+.Sports-Section h1::after {
+  content: "";
+  display: inline-block;
+  width: 86%;
+  height: 2px;
+  background-color: var(--grey);
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.Sports-Row {
+  display: flex;
+  gap: 1rem;
+  height: auto;
+  background-color: var(--white);
+  margin: 0 4rem;
+}
+
+.Sports-News-1 {
+  width: 25%;
+  margin:1rem;
+}
+
+.Sports-img {
+  width: 100%;
+}
+
+.Sports-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Sports-text {
+  color: var(--dark);
+  padding: 0.5rem;
+}
+
+.Sports-text a {
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+.Soprts-text p{
+  display: inline;
+  margin-right: 0.5rem; ;
+}
+
+  
+ 
+
