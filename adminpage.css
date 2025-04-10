@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: white;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,13 +17,12 @@ body {
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #000000;
   margin-bottom: 30px;
   font-size: 48px;
 }
 
 form {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +37,7 @@ form {
 label {
   display: block;
   margin-bottom: 8px;
-  color: #333;
+  color: #000000;
   font-size: 36px;
   font-weight: 500;
 }
@@ -49,7 +48,7 @@ input[type="password"] {
   height: 76px;
   padding: 12px;
   border: none;
-  background-color: #e0e0e0;
+  background-color: #d9d9d9;
   border-radius: 4px;
   font-size: 36px;
   font-family: "Poppins", sans-serif;
