@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Contact Container */
+.Contact-Container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 8px;
+}
+
+.Contact-Us {
+  flex: 1;
+  width: 529px;
+  height: 137.8px;
+  padding-right: 20px;
+}
+
+.Left-Section h1 {
+  padding-top: 100px;
+  font-size: 96px;
+  font-weight: 600;
+}
+.Contact-Info {
+  margin-bottom: 30px;
+}
+
+.Left-Section p {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.Contact-Info h3 {
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.Contact-Info p {
+  font-weight: 300;
+  font-size: 24px;
+}
+.Social-Icons h4 {
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.Social-Icons i {
+  font-size: 24px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.icons-container {
+  display: flex;
+  gap: 15px;
+}
+
+/* Right Section */
+.Right-Section {
+  flex: 1;
+  padding: 20px 8px;
+}
+
+.R form {
+  display: flex;
+  flex-direction: column;
+}
+
+.R label {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+.R textarea {
+  width: 588px;
+  height: 78px;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.R button {
+  margin-top: 30px;
+  background-color: #04594d;
+  color: white;
+  width: 338px;
+  height: 76px;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 30px;
+  font-size: 36px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.R button:hover {
+  background-color: #067a68;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Contact-Container {
+    flex-direction: row;
+  }
+
+  .Left-Section h1 {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .Contact-Us {
+    font-size: 48px;
+    font-weight: 600;
+    padding: 20px;
+  }
+  .Left-Section p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .Contact-Info h3 {
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .Contact-Info p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .Social-Icons h4 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+  .icons-container {
+    display: flex;
+    gap: 15px;
+  }
+  .Social-Icons {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .icons-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+  }
+  .icons-container i {
+    font-size: 20px;
+  }
+
+  .Right-Section {
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 404px;
+    height: 78px;
+    font-size: 36px;
+  }
+
+  .R textarea {
+    width: 419px;
+    height: 270px;
+  }
+  .R button {
+    width: 210px;
+    height: 76px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Contact-Container {
+    flex-direction: column;
+  }
+  .Contact-Us {
+    flex: 1;
+    width: 315px;
+    height: 64px;
+    padding-right: 20px;
+  }
+
+  .Left-Section h1 {
+    padding-top: 10px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .Contact-Info {
+    margin-bottom: 30px;
+  }
+
+  .Left-Section p {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .Contact-Info h3 {
+    padding-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .Contact-Info p {
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+  }
+  .Social-Icons h4 {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+  .icons-container {
+    display: flex;
+    gap: 15px;
+  }
+  .Social-Icons {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  .icons-container i {
+    font-size: 13px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 219px;
+    height: 31px;
+    font-size: 14px;
+  }
+  .R label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .R textarea {
+    width: 218px;
+    height: 112px;
+    font-size: 14px;
+  }
+
+  .R button {
+    width: 66px;
+    height: 27px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+  }
+}
