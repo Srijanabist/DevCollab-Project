@@ -86,8 +86,7 @@ input[type="password"] {
 .submit:hover {
   background-color: #234539;
 }
-
-/* Desktop Responsive Styles */
+/* Desktop */
 @media (max-width: 1440px) {
   .adminlogin-container {
     padding: 25px;
@@ -121,8 +120,42 @@ input[type="password"] {
   }
 }
 
-/* Tab Responsive Styles */
-@media (max-width: 912px) {
+/* Tablet Responsive Styles */
+@media (max-width: 768px) {
+  .adminlogin-container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  label {
+    font-size: 24px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    height: 42px;
+    font-size: 22px;
+  }
+
+  .forgot-password a {
+    font-size: 22px;
+  }
+
+  .submit {
+    height: 42px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 480px) {
   .adminlogin-container {
     padding: 20px;
   }
@@ -159,7 +192,7 @@ input[type="password"] {
   }
 }
 
-@media (max-height: 768px) and (orientation: landscape) {
+@media (max-height: 480px) and (orientation: landscape) {
   body {
     padding: 10px;
   }
@@ -200,7 +233,7 @@ input[type="password"] {
   }
 }
 
-/* Phone Responsive Styles  */
+/* For very small screens */
 @media (max-width: 320px) {
   .adminlogin-container {
     padding: 15px;
