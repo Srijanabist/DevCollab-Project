@@ -86,39 +86,6 @@ input[type="password"] {
 .submit:hover {
   background-color: #234539;
 }
-/* Desktop */
-@media (max-width: 1440px) {
-  .adminlogin-container {
-    padding: 25px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  label {
-    font-size: 24px;
-  }
-
-  input[type="email"],
-  input[type="password"] {
-    height: 42px;
-    font-size: 22px;
-  }
-
-  .forgot-password a {
-    font-size: 22px;
-  }
-
-  .submit {
-    height: 42px;
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-}
 
 /* Tablet Responsive Styles */
 @media (max-width: 768px) {
