@@ -87,8 +87,8 @@ input[type="password"] {
   background-color: #234539;
 }
 
-/* Tablet Responsive Styles */
-@media (max-width: 768px) {
+/* Desktop Responsive Styles */
+@media (max-width: 1440px) {
   .adminlogin-container {
     padding: 25px;
   }
@@ -121,8 +121,8 @@ input[type="password"] {
   }
 }
 
-/* Mobile Responsive Styles */
-@media (max-width: 480px) {
+/* Tab Responsive Styles */
+@media (max-width: 912px) {
   .adminlogin-container {
     padding: 20px;
   }
@@ -159,7 +159,7 @@ input[type="password"] {
   }
 }
 
-@media (max-height: 480px) and (orientation: landscape) {
+@media (max-height: 768px) and (orientation: landscape) {
   body {
     padding: 10px;
   }
@@ -200,7 +200,7 @@ input[type="password"] {
   }
 }
 
-/* For very small screens */
+/* Phone Responsive Styles  */
 @media (max-width: 320px) {
   .adminlogin-container {
     padding: 15px;
