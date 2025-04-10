@@ -3,74 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin page</title>
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome CDN -->
+    <title>Admin Login</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
     />
-
     <link rel="stylesheet" href="adminpage.css" />
   </head>
   <body>
-    <!-- Left Section -->
-    <div class="Contact-Container">
-      <div class="Contact-Us">
-        <div class="Left-Section">
-          <h1>Contact Us</h1>
-          <p>
-            Feel free to reach out to us for any inquiries and feedback. We’d
-            love to hear from you. Thank you.
-          </p>
+    <div class="adminlogin-container">
+      <h1>Admin Login</h1>
+      <form action="your-server-endpoint" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
         </div>
-        <div class="Contact-Info">
-          <h3>Contact Information</h3>
-          <p>E-mail: bistashiru@gmail.com</p>
-          <p>Address: New baneshwor, ktm</p>
-          <p>Phone number: 9748245481</p>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
         </div>
-        <div class="Social-Icons">
-          <h4>Follow Us</h4>
-          <div class="icons-container">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
+
+        <div class="forgot-password">
+          <a href="#">Forgot password?</a>
         </div>
-      </div>
 
-      <!-- Right Section -->
-
-      <div class="Right-Section">
-        <div class="R">
-          <form>
-            <label for="Name">Name</label>
-            <input type="text" id="name" placeholder="" />
-
-            <label for="Email">Email</label>
-            <input type="text" id="name" placeholder="" />
-
-            <label for="Phone Number">Phone Number</label>
-            <input type="number" id="name" placeholder="" />
-
-            <label for="message">Message</label>
-            <textarea name="msg" id="msg" rows="5"></textarea>
-
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
+        <button type="submit" class="submit">Submit</button>
+      </form>
     </div>
   </body>
 </html>
+
+   
