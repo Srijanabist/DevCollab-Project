@@ -36,18 +36,12 @@ i{
   padding: 0.25rem;
 }
 
-body {
-  font-size: var(--font-xs);
-  font-family: "Poppins", sans-serif;
-  font-weight: var(--font-regular);
-  color: var(--color-black);
   body {
   font-size: var(--font-xs);
   font-family: "Poppins", sans-serif;
   font-weight: var(--font-regular);
   color: var(--color-black);
   line-height: 1.5;
-}
 }
 
 .header-top {
