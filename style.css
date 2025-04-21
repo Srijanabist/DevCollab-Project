@@ -15,7 +15,8 @@
   --font-light: 300;
   --font-regular: 400;
   --font-medium: 500;
-  --font-semibold: 600;
+  --font-semibold: 600;  
+  --font-bold: 800;
 }
 
 * {
@@ -112,7 +113,7 @@ i{
 }
 
 .breaking_news h1 {
-  font-size: var(--font-md);
+  font-size: var(--font-bold);
   padding: 0.5rem;
 }
 
